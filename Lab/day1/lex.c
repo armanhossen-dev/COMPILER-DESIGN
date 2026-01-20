@@ -135,7 +135,7 @@ void lexicalAnalyzer(FILE *fp) {
                 }
                 token[k++] = c;
             }
-            printf("Token: %-20s \tType: Header File\n", token);
+            printf("Token: %-20s \tType: HEADER FILE\n", token);
         }
         
         
