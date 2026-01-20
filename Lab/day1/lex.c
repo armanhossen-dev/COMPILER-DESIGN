@@ -41,7 +41,7 @@ void lexicalAnalyzer(FILE *fp) {
                     c=fgetc(fp);
                     }
                     token[k]='\0';
-                    printf("Token: %-20s \tType:Single Line COMMENT\n", token);
+                    printf("Token: %-20s \tType: SINGLE_LINE_COMMENT\n", token);
 
                  }
                  //multi comment detection
@@ -61,7 +61,7 @@ void lexicalAnalyzer(FILE *fp) {
                                 }
                             }
                         }
-                        printf("Token: %-20s \t\t\t\tType:Multi line COMMENT\n", token);
+                        printf("Token: %-20s \t\t\t\tType: MULTI_LINE_COMMENT\n", token);
                     }
 
         }
@@ -73,7 +73,7 @@ void lexicalAnalyzer(FILE *fp) {
                 token[k++] = c;
             }
             token[k] = '\0';
-            if (c != EOF) ungetc(c, fp); //bujini
+            if (c != EOF) ungetc(c, fp); // c has now a char that i does'nt have to , so  it put back that next time we se take a char from the file we get this char which we just put bact
 
             if (isKeyword(token))
                 printf("Token: %-20s \tType: KEYWORD\n", token);
@@ -135,7 +135,7 @@ void lexicalAnalyzer(FILE *fp) {
                 }
                 token[k++] = c;
             }
-            printf("Token: %-20s \tType: HEADER FILE\n", token);
+            printf("Token: %-20s \tType: HEADER_FILE\n", token);
         }
         
         
