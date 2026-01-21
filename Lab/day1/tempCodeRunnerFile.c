@@ -1,1 +1,0 @@
-printf("Token: %-20s \tType: KEYWORD\n", token);
