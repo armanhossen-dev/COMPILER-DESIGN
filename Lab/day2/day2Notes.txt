@@ -1,0 +1,25 @@
+21/1/26
+# DFA based pattern recognition
+//Deterministic Finite Automata
+
+
+# Problem statement: write a C program to recognize string 
+AIM: identify strings from the input string.
+
+//what is string? how to identify string?
+Algorithm/Procedure:
+By using transition diagram we verify input of the state.
+If the state recognize the given pattern rule.
+Then print string is accepted under a*/a*b+/abb.
+Else print string not accepted
+//write a c program to recognize any type of string.
+
+//what is pattern?
+relation between pattern with compiler
+
+
+//example pattern string identify
+a*
+a*b+
+abb
+1. NFA design korte hobe egular jonne , then DFA banabo, 
